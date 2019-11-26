@@ -12,6 +12,7 @@ Bundle 'gmarik/vundle'
 " Code Completions
 "------------------
 Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neosnippet'
 Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'ervandew/supertab'
@@ -25,7 +26,7 @@ Bundle 'tomtom/tlib_vim'
 "-----------------
 " Fast navigation
 "-----------------
-Bundle 'edsono/vim-matchit'
+"Bundle 'edsono/vim-matchit'
 Bundle 'Lokaltog/vim-easymotion'
 
 "--------------
@@ -81,6 +82,10 @@ Bundle 'tpope/vim-markdown'
 
 "------- Ruby --------
 " Bundle 'tpope/vim-endwise'
+
+"------- Rust --------
+Bundle 'racer-rust/vim-racer'
+Bundle 'rust-lang/rust.vim'
 
 "------- Go ----------
 Bundle 'fatih/vim-go'

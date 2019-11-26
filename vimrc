@@ -13,8 +13,9 @@ syntax on
 " Vim UI
 "--------
 " color scheme
-set background=dark
-color solarized
+"set background=dark
+"color solarized
+colorscheme molokai
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -147,6 +148,7 @@ let NERDTreeChDirMode=2
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 " let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
 let NERDTreeShowBookmarks=1
+let NERDTreeShowHidden=1
 let NERDTreeWinPos = "right"
 
 " nerdcommenter
@@ -195,13 +197,47 @@ let g:SuperTabRetainCompletionType=2
 set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
+" Terminal
+if has('nvim')
+    fu! OpenTerminal()
+        :terminal
+    endf
+else
+    fu! OpenTerminal()
+        :call term_start('zsh', {'curwin' : 1, 'term_finish' : 'close'})
+    endf
+endif
+
+fu! Split()
+    " open split windows on the botright
+    split
+    exe "normal\<C-w>w"
+    " resize the height of terminal windows
+    resize 15
+    :call OpenTerminal()
+    setlocal nobuflisted
+endf
+
+fu! VSplit()
+    " open split windows on the right
+    vsplit
+    exe "normal\<C-w>w"
+    :call OpenTerminal()
+    setlocal nobuflisted
+endf
+
 " Keybindings for plugin toggle
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
-nmap <F5> :TagbarToggle<cr>
-nmap <F6> :NERDTreeToggle<cr>
 nmap <F3> :GundoToggle<cr>
 nmap <F4> :IndentGuidesToggle<cr>
+nmap <F7> :TagbarToggle<cr>
+nmap <F8> :NERDTreeToggle<cr>
+nnoremap <F9> :call Split()<CR>
+nnoremap <F10> :call VSplit()<CR>
 nmap  <D-/> :
 nnoremap <leader>a :Ack
 nnoremap <leader>v V`]
