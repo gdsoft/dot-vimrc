@@ -94,7 +94,7 @@ Bundle 'fatih/vim-go'
 Bundle 'kien/rainbow_parentheses.vim'
 " Bundle 'wlangstroth/vim-racket'
 " Bundle 'vim-scripts/VimClojure'
-" Bundle 'rosstimson/scala-vim-support'
+Bundle 'rosstimson/scala-vim-support'
 
 "--------------
 " Color Schemes
