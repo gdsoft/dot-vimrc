@@ -57,6 +57,9 @@ Bundle 'bronson/vim-trailing-whitespace'
 " Bundle 'humiaozuzu/fcitx-status'
 Bundle 'nvie/vim-togglemouse'
 
+"------- Code comment ------
+Bundle 'tpope/vim-commentary'
+
 "----------------------------------------
 " Syntax/Indent for language enhancement
 "----------------------------------------
