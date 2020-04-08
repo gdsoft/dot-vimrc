@@ -200,6 +200,10 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 
+" quickrum for groovy
+let g:quickrun_config = {}
+let g:quickrun_config.groovy = {'command' : 'groovy', 'cmdopt' : ''}
+
 " Terminal
 if has('nvim')
     fu! OpenTerminal()

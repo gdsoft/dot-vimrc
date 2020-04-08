@@ -84,6 +84,10 @@ Bundle 'nono/jquery.vim'
 Bundle 'tpope/vim-markdown'
 " Bundle 'timcharper/textile.vim'
 
+"------- Groovy --------
+"Bundle 'groovy.vim'
+Bundle 'thinca/vim-quickrun'
+
 "------- Ruby --------
 " Bundle 'tpope/vim-endwise'
 
@@ -92,7 +96,7 @@ Bundle 'racer-rust/vim-racer'
 Bundle 'rust-lang/rust.vim'
 
 "------- Go ----------
-Bundle 'fatih/vim-go'
+"Bundle 'fatih/vim-go'
 
 "------- FPs ------
 Bundle 'kien/rainbow_parentheses.vim'
