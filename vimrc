@@ -16,6 +16,7 @@ syntax on
 "set background=dark
 "color solarized
 colorscheme molokai
+set background=dark
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -203,6 +204,8 @@ let g:deoplete#enable_at_startup = 1
 let g:quickrun_config = {}
 " quickrum for groovy
 let g:quickrun_config.groovy = {'command' : 'groovy', 'cmdopt' : ''}
+" quickrum for node
+let g:quickrun_config.node= {'command' : 'node', 'cmdopt' : ''}
 " quickrum for biwascheme
 let g:quickrun_config.biwas = {'command' : 'biwas', 'cmdopt' : ''}
 
