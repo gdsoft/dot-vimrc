@@ -205,11 +205,13 @@ let g:quickrun_config = {}
 " quickrum for groovy
 let g:quickrun_config.groovy = {'command' : 'groovy', 'cmdopt' : ''}
 " quickrum for node
-let g:quickrun_config.node= {'command' : 'node', 'cmdopt' : ''}
+let g:quickrun_config.node = {'command' : 'node', 'cmdopt' : ''}
 " quickrum for biwascheme
 let g:quickrun_config.biwas = {'command' : 'biwas', 'cmdopt' : ''}
 " quickrum for chez
-let g:quickrun_config.chez= {'command' : 'chezscheme9.5', 'cmdopt' : '--script'}
+let g:quickrun_config.chez = {'command' : 'scheme', 'cmdopt' : '--script'}
+" quickrum for scheme
+let g:quickrun_config.scheme = {'command' : 'scheme', 'cmdopt' : '--script'}
 
 " Terminal
 if has('nvim')
